@@ -2,4 +2,8 @@
 
 🙋‍♂️ Welcome to my component library!!
 
-This is a repo of my favourite components -> ones I've built, ones I've found, and ones I've repurposed.
+This is a repo of my favourite components:
+
+- Ones I've built;
+- Ones I've found; and
+- Ones I've repurposed.
