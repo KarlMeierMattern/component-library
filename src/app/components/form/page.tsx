@@ -52,7 +52,7 @@ export default function TestForm() {
           type="email"
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Email"
-          className="px-6 py-4 rounded-lg bg-white bg-opacity-80 text-lg placeholder-gray-400 focus:outline-none border-1 border-gray-300"
+          className="text-gray-700 px-6 py-4 rounded-lg bg-white bg-opacity-80 text-lg placeholder-gray-400 focus:outline-none border-1 border-gray-300"
         />
         <input
           value={password}
@@ -60,21 +60,21 @@ export default function TestForm() {
           minLength={8}
           onChange={(e) => setPassword(e.target.value)}
           placeholder="Password"
-          className="px-6 py-4 rounded-lg bg-white bg-opacity-80 text-lg placeholder-gray-400 focus:outline-none border-1 border-gray-300"
+          className="text-gray-700 px-6 py-4 rounded-lg bg-white bg-opacity-80 text-lg placeholder-gray-400 focus:outline-none border-1 border-gray-300"
         />
         <input
           value={confirmPassword}
           type="password"
           onChange={(e) => setConfirmPassword(e.target.value)}
           placeholder="Confirm password"
-          className="px-6 py-4 rounded-lg bg-white bg-opacity-80 text-lg placeholder-gray-400 focus:outline-none border-1 border-gray-300"
+          className="text-gray-700 px-6 py-4 rounded-lg bg-white bg-opacity-80 text-lg placeholder-gray-400 focus:outline-none border-1 border-gray-300"
         />
         <button
           type="submit"
           disabled={isSubmitting}
           className="mt-2 bg-blue-500 hover:bg-blue-600 disabled:bg-gray-500 text-white text-lg font-semibold py-3 rounded-lg transition-colors cursor-pointer"
         >
-          Submit
+          {isSubmitting ? "Submitting..." : "Submit"}
         </button>
       </form>
     </div>
