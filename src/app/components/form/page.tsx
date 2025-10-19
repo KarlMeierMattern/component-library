@@ -15,7 +15,7 @@ export default function FormPage() {
       <label className="flex items-center gap-x-2">
         <input
           type="radio"
-          name="formType"
+          name="simple"
           value="simple"
           onChange={() => setFormType("simple")}
           checked={formType === "simple"}
@@ -25,7 +25,7 @@ export default function FormPage() {
       <label className="flex items-center gap-x-2">
         <input
           type="radio"
-          name="formType"
+          name="react-form"
           value="react-form"
           onChange={() => setFormType("react-form")}
           checked={formType === "react-form"}
@@ -35,7 +35,7 @@ export default function FormPage() {
       <label className="flex items-center gap-x-2">
         <input
           type="radio"
-          name="formType"
+          name="zod"
           value="zod"
           onChange={() => setFormType("zod")}
           checked={formType === "zod"}

@@ -5,7 +5,7 @@ import { signUpSchema } from "@/app/components/form/types";
 
 export async function POST(request: NextRequest) {
   const body: unknown = await request.json();
-  const result = signUpSchema.safeParse(body);
+  const result = signUpSchema.safeParse(body); // server side zod validation
 
   let zodErrors = {};
 
